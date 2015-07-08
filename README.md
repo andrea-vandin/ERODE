@@ -38,7 +38,7 @@ For example, these are the commands to reduce the CRN M11 of the draft using BDE
 It is worth to remark that M7 is a special case where the two computed partitions coincide.
 
 ----
-###Example: reducing the model M7 of the draft up to Backward Diffrential Equivalence###
+###Example: reducing the model M7 of the draft using BDE
 
 
 ```
