@@ -3,9 +3,9 @@ Exact Reduction of ODE systems
 
 _*ERODE*_ is a Java tool which interacts with the state-of-the-art Micrsoft's SMT solver [Z3](https://github.com/Z3Prover/z3) to perform automatic exact reductions of chemical reaction networks (CRN).
 
-The tool exploits two novel reduction techniques, the Forward and Backward Differential Equivalences, defined for Intermediate Drift Oriented (IDOL) programs. IDOL essentially allows to express systems of nonlinear Ordinary Differential Equations (ODE). Hence, the reduction techniques can be applied to the well-known continuous-state semantics of CRNs based on the law of mass action, associating an ODE to each species of the CRN. 
+The tool exploits two novel reduction techniques, the Forward and Backward Differential Equivalences, defined for Intermediate Drift Oriented (IDOL) programs. IDOL allows to express systems of nonlinear ordinary differential equations (ODE). Hence, the two reduction techniques can be applied to the well-known continuous-state semantics of CRNs based on the law of mass action, associating an ODE to each species of the CRN. 
 
-A Forward Differential Equivalence (FDE) is an equivalence among ODE variables (i.e., species of a CRN) characterizing the notion of [ODE lumpability](http://epubs.siam.org/doi/abs/10.1137/S0036139995293294?journalCode=smjmap): a reduced ODE system can be given expressed in terms of an ODE variable per block of an FDE partition. 
+A Forward Differential Equivalence (FDE) is an equivalence among ODE variables (i.e., species of a CRN) characterizing the notion of [ODE lumpability](http://epubs.siam.org/doi/abs/10.1137/S0036139995293294?journalCode=smjmap): a reduced ODE system expressed in terms of one ODE variable per block of an FDE partition can be given. 
 
 A Backward Differential Equivalence (BDE) is similar, but it characterizes the notion of [Exact Fluid lumpability](http://link.springer.com/chapter/10.1007%2F978-3-642-32940-1_27): equivalent ODE variables have the same solution at all time points; in other words, a BDE relates species whose ODE solutions are equal whenever they start from identical initial conditions. 
 
@@ -23,11 +23,7 @@ Our differential equivalences can be applied to any .net model by just running (
          ./runOnMac.sh fileIn technique fileOut
 ```
 
-where *fileIn* specifies the .net file containing the CRN to be reduced up to our differential equivalences, which is automatically converted in an IDOL model. 
-
-The parameter *technique* can be either BDE or FDE. In case the BDE technique is used, the ODE variables (i.e., the species of the input CRN) are additionally pre-partitioned in blocks of species with same initial conditions. 
-
-Finally, the parameter *fileOut* specifies a text file where to store information about the computed partition.
+where *fileIn* specifies the .net file containing the CRN to be reduced up to our differential equivalences, which is automatically converted in an IDOL model. The parameter *technique* can be either BDE or FDE. In case the BDE technique is used, the ODE variables (i.e., the species of the input CRN) are additionally pre-partitioned in blocks of species with same initial conditions. Finally, the parameter *fileOut* specifies a text file where to store information about the computed partition.
 
 For example, these are the commands to reduce the CRN M11 of the draft using BDE and FDE, respectively:
 
