@@ -1,7 +1,7 @@
 # ERODE
 Exact Reduction of ODE systems
 
-_*ERODE*_ is a Java tool which interacts with the state-of-the-art Micrsoft's SMT solver [Z3](https://github.com/Z3Prover/z3) to perform automatic exact reductions of chemical reaction networks (CRN).
+_*[ERODE](https://copy.com/tmextXxmbJ32ZIGW)*_ is a Java tool which interacts with the state-of-the-art Micrsoft's SMT solver [Z3](https://github.com/Z3Prover/z3) to perform automatic exact reductions of chemical reaction networks (CRN).
 
 The tool exploits two novel reduction techniques, the Forward and Backward Differential Equivalences, defined for Intermediate Drift Oriented (IDOL) programs. IDOL allows to express systems of nonlinear ordinary differential equations (ODE). Hence, the two reduction techniques can be applied to the well-known continuous-state semantics of CRNs based on the law of mass action, associating an ODE to each species of the CRN. 
 
