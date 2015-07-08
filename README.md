@@ -58,6 +58,8 @@ Read parameters: 9, read species: 18, read CRNreactions: 48, read reagents: 26, 
 Prepartinioning with respect to the initial concentrations of the species... completed. From 18 species to 3 blocks. Time necessary: 0.004 (s)
 
 BDE partitioning ./BNGNetworks/M7.net ... (Total SMT init time: 0.094, total SMT check time: 0.04400000000000001 (s) ) completed. From 18 species to 12 blocks. Time necessary: 0.203 (s).
+
+Writing the partition in file ./BDEofM7.txt ... completed
 ```
 
 Where the file BDEofM7.txt will contain the following partition of the species of M7:
