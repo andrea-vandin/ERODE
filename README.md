@@ -17,10 +17,9 @@ Currently, it has to be intended only as accompanying material for the paper pre
 
 For the sake of reproducibility, ERODE comes with the models M1-M12 treated in the draft, stored in the folder "BNGNetworks".
 
-Our differential equivalences can be applied to any .net model by just running the following command (on a Mac machine)
+Our differential equivalences can be applied to any .net model by just running (on a Mac machine):
 
 ```
-#!bash
          ./runOnMac.sh fileIn technique fileOut
 ```
 
@@ -29,7 +28,6 @@ where *fileIn* specifies the .net file containing the CRN to be reduced up to ou
 For example, these are the commands to reduce the CRN M11 of the draft using BDE and FDE, respectively:
 
 ```
-#!bash
          ./runOnMac.sh ./BNGNetworks/M7.net BDE BDEofM7.txt
 
          ./runOnMac.sh ./BNGNetworks/M7.net FDE FDEofM7.txt
@@ -42,7 +40,6 @@ It is worth to remark that M7 is a special case where the two computed partition
 
 
 ```
-#!bash
 ./runOnMac.sh ./BNGNetworks/M7.net BDE BDEofM7.txt
 
 Importing: ./BNGNetworks/M7.net
@@ -57,7 +54,6 @@ Writing the partition in file ./BDEofM7.txt ... completed
 
 Where the file BDEofM7.txt will contain the following partition of the species of M7:
 ```
-#!bash
 The partition has 12 blocks out of 18 species:
 Block 1, Size: 1
 2-S(p1~U,p2~U) 
