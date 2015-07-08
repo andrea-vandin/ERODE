@@ -23,7 +23,11 @@ Our differential equivalences can be applied to any .net model by just running (
          ./runOnMac.sh fileIn technique fileOut
 ```
 
-where *fileIn* specifies the .net file containing the CRN to be reduced up to our differential equivalences, which is automatically converted in an IDOL model, while *technique* can be either BDE or FDE. In case the BDE technique is used, the ODE variables (i.e., the species of the input CRN) are additionally pre-partitioned in blocks of species with same initial conditions. Finally, the parameter *fileOut* specifies a text file where to store information about the computed partition.
+where *fileIn* specifies the .net file containing the CRN to be reduced up to our differential equivalences, which is automatically converted in an IDOL model. 
+
+The parameter *technique* can be either BDE or FDE. In case the BDE technique is used, the ODE variables (i.e., the species of the input CRN) are additionally pre-partitioned in blocks of species with same initial conditions. 
+
+Finally, the parameter *fileOut* specifies a text file where to store information about the computed partition.
 
 For example, these are the commands to reduce the CRN M11 of the draft using BDE and FDE, respectively:
 
