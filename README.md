@@ -3,7 +3,7 @@ Exact Reduction of ODE systems
 
 _*ERODE*_ is a Java tool which interacts with the state-of-the-art Micrsoft's SMT solver [Z3](https://github.com/Z3Prover/z3) to perform automatic exact reductions of chemical reaction networks (CRN).
 
-The tool exploits two novel reduction techniques, the Forward and Backward Differential Equivalences for Intermediate Drift Oriented (IDOL) programs. An IDOL program essentially corresponds to a system of Ordinary Differential Equations (ODE). Hence the novel reduction techniques can be applied to the well-known continuous continuous-state semantics of CRNs based on the law of mass action, providing an ODE system. 
+The tool exploits two novel reduction techniques, the Forward and Backward Differential Equivalences, defined for Intermediate Drift Oriented (IDOL) programs. IDOL essentially allows to express systems of nonlinear Ordinary Differential Equations (ODE). Hence the novel reduction techniques can be applied to the well-known continuous continuous-state semantics of CRNs based on the law of mass action, providing an ODE system with an ODE per species of the CRN. 
 
 A Forward Differential Equivalence (FDE) is an equivalence among ODE variables (i.e., species of a CRN) characterizing the notion of ordinary lumpable partition of its ODEs: a reduced ODE system can be given expressed in terms of an ODE variable per block of an FDE partition. 
 
